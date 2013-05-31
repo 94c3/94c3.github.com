@@ -1,0 +1,11 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %title= @title
+    %meta{:charset => "utf-8"}
+    / Stylesheets.
+    %link{:rel => "stylesheet", :href => "bootstrap/css/bootstrap.css", :type => "text/css", :media => 'screen'}
+    %link{:rel => "stylesheet", :href => "tweaks.css", :type => "text/css", :media => 'screen'}
+  %body
+    .container-fluid
+      = yield 
